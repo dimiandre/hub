@@ -1,9 +1,8 @@
 package types
 
 import (
-	"math"
-
 	sdk "github.com/cosmos/cosmos-sdk/types"
+	"math"
 )
 
 type PaginatedIterator struct {
@@ -36,7 +35,7 @@ func (p *PaginatedIterator) Skip(skip int) {
 
 func (p PaginatedIterator) Limit(limit int, iterFunc func(iter sdk.Iterator)) {
 	if limit <= 0 {
-		limit = math.MaxInt64
+		limit = math.MaxInt32
 	}
 
 	for index, iter := range p.items {
