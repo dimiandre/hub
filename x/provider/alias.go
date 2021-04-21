@@ -49,7 +49,11 @@ var (
 	ErrorUnmarshal                  = types.ErrorUnmarshal
 	ErrorUnknownMsgType             = types.ErrorUnknownMsgType
 	ErrorUnknownQueryType           = types.ErrorUnknownQueryType
-	ErrorInvalidField               = types.ErrorInvalidField
+	ErrorInvalidFieldName           = types.ErrorInvalidFieldName
+	ErrorInvalidFieldFrom           = types.ErrorInvalidFieldFrom
+	ErrorInvalidFieldIdentity       = types.ErrorInvalidFieldIdentity
+	ErrorInvalidFieldWebsite        = types.ErrorInvalidFieldWebsite
+	ErrorInvalidFieldDescription    = types.ErrorInvalidFieldDescription
 	ErrorDuplicateProvider          = types.ErrorDuplicateProvider
 	ErrorProviderDoesNotExist       = types.ErrorProviderDoesNotExist
 	EventTypeSet                    = types.EventTypeSet
